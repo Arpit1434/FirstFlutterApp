@@ -61,6 +61,14 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/deathnote.jpg
+    - assets/space1.jpg
+    - assets/space2.jpg
+    - assets/space3.jpg
+    - assets/space4.jpg
+    - assets/space5.jpg
+    - assets/space6.jpg
+    - assets/space7.jpg
+    - assets/space8.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

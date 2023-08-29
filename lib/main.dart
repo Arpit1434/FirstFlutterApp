@@ -14,29 +14,86 @@ class Home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-            "DeathNote",
+            "Space",
           style: TextStyle(
             fontFamily: "IndieFlower",
-            fontSize: 26.0
+            fontSize: 26.0,
           ),
         ),
         centerTitle: true,
-        backgroundColor: Colors.red[600],
+        backgroundColor: Colors.black,
       ),
-      body: Center(
-        child: Image.asset("assets/deathnote.jpg"),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          print("You liked this picture!");
-        },
-        backgroundColor: Colors.grey[200],
-        child: Icon(
-          Icons.favorite,
-          color: Colors.pink,
-          size: 24.0,
-        ),
-      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
+          Row(
+            children: <Widget>[
+              Expanded(
+                flex: 2,
+                child: Container(
+                  margin: EdgeInsets.all(10.0),
+                  child: Image.asset("assets/space1.jpg"),
+                ),
+              ),
+              Expanded(
+                flex: 1,
+                child: Container(
+                  margin: EdgeInsets.all(10.0),
+                  child: Image.asset("assets/space2.jpg"),
+                ),
+              ),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              Expanded(
+                child: Container(
+                  margin: EdgeInsets.all(10.0),
+                  child: Image.asset("assets/space3.jpg")
+                ),
+              ),
+              Expanded(
+                child: Container(
+                    margin: EdgeInsets.all(10.0),
+                    child: Image.asset("assets/space4.jpg")
+                ),
+              ),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              Expanded(
+                child: Container(
+                    margin: EdgeInsets.all(10.0),
+                    child: Image.asset("assets/space5.jpg")
+                ),
+              ),
+              Expanded(
+                child: Container(
+                    margin: EdgeInsets.all(10.0),
+                    child: Image.asset("assets/space6.jpg")
+                ),
+              ),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              Expanded(
+                child: Container(
+                    margin: EdgeInsets.all(10.0),
+                    child: Image.asset("assets/space7.jpg")
+                ),
+              ),
+              Expanded(
+                child: Container(
+                    margin: EdgeInsets.all(10.0),
+                    child: Image.asset("assets/space8.jpg")
+                ),
+              ),
+            ],
+          ),
+        ],
+      )
     );
   }
 }
